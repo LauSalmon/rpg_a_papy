@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(82, 184, 162);
+    color: white;
+    font-family: verdana;
+    font-size: 2rem;
+    min-height: 10vh;
+    transition: background-color 0.25s;
+    transition: color 0.25s;
+}
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+#game{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+}
+.character_card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+button{
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(233, 169, 72);
+    color: rgb(7, 31, 37);
+    font-weight: bold;
+}
+button:active{
+    scale: 0.90;
+}
+
+img{
+    max-height: 200px;
+    transition: scale 0.25s; /*fluidifie l'animation d'attaque*/
+}
+#ennemy img{
+    transform: rotateY(180deg);
+}
+
+footer{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.attaquer{
+    scale: 1.25;
+    color: red;
+}
+
+.soigner_hero{
+    background-color: purple;
+}
+
+.soigner_ennemie{
+    background-color: rgb(116, 81, 18);
+}
